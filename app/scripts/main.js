@@ -16,5 +16,14 @@ $(document).scroll(function(){
     
     $('.navbar-fixed nav').addClass("z-depth-0");
   }
+  var swiper = new Swiper('#nuestros_clientes .swiper-container', {
+    slidesPerView: 4,
+    spaceBetween: 50,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
 }
+
 );
