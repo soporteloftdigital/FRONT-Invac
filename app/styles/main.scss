@@ -16,6 +16,10 @@
 ::after {
   box-sizing: inherit;
 }
+html, body{
+  width: 100%;
+  height: 100%;
+}
 
 body {
   margin: 0;
@@ -36,8 +40,34 @@ hr {
   border: 0;
   border-top: 1px solid rgba(0,0,0,.1);
 }
-
+.bg_azul
+{
+  background-color: #2056A6;
+}
+@mixin padding_xy($orientacion, $number) {
+  @if $orientacion=="left"
+  {
+    padding-left: $number + px;
+  }
+  @if $orientacion=="right"
+  {
+    padding-right: $number + px;
+  }
+  @if $orientacion=="top"
+  {
+    padding-top: $number + px;
+  }
+  @if $orientacion=="bottom"
+  {
+    padding-bottom: $number + px;
+  }
+}
 // General
 @import 'variables';
 @import 'navbar';
 @import 'footer';
+@import 'home/home';
+@import 'home/servicios_home';
+@import 'home/bodegas';
+@import 'home/division';
+@import 'home/red_de_bodegas';

@@ -1,0 +1,41 @@
+#bodegas
+{
+    background-color: $gris_bodegas;
+    .row
+    {
+        margin-bottom: 0;
+        .pdr
+        {
+            @include padding_xy(right,0);
+        }
+    }
+    .cont_bodega
+    {
+        width: 70%;
+        float: right;
+        padding: 5%;
+        padding-left: 0;
+        padding-right: 0;
+        max-height: 440px;
+        margin: 0;
+        padding-bottom: 0;
+        .titulo
+        {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+        p
+        {
+            margin: 0;
+        }
+        ul
+        {
+            margin-bottom: 0;
+            li
+            {
+                list-style-type: disc;
+                font-size: 13px;
+            }
+        }
+    }
+}

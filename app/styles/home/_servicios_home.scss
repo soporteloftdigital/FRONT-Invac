@@ -1,0 +1,24 @@
+.items  
+{
+    padding: 2% 5%;
+    .row
+    {
+        margin-bottom: 0;
+        figure
+        {
+            img
+            {
+                margin: 20px auto;
+                display: block;
+            }
+            figcaption
+            {
+                p
+                {
+                    text-align: center;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

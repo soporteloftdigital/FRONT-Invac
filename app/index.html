@@ -11,9 +11,11 @@
   <link rel="stylesheet" href="/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="/node_modules/tippy.js/themes/light.css">
   <link rel="stylesheet" href="/node_modules/slim-select/dist/slimselect.min.css">
+  <link rel="stylesheet" href="./styles/materialize.min.css">
   <!-- endbuild -->
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- endbuild -->
 </head>
 
@@ -21,8 +23,122 @@
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-
-
+  <header class="navbar-fixed">
+    <nav class="transparent z-depth-0">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">
+          <img src="./images/logo-invac.svg" alt="">
+        </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="sass.html">Quienes somos</a></li>
+          <li><a href="badges.html">Nuevas bodegas</a></li>
+          <li><a href="collapsible.html">Red de bodegas</a></li>
+          <li><a href="collapsible.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">Javascript</a></li>
+    <li><a href="mobile.html">Mobile</a></li>
+  </ul>  
+  <section id="home">
+    <div class="container">
+      <div class="bajada_home">
+        <h1>Centro de bodegaje el cerro etapa II</h1>
+        <h2>Solucionamos tus necesidades de bodegaje industrial</h2>
+        <P>Arrienda con nosotros</P>
+      </div>
+    </div>
+  </section>
+  <div class="items">
+    <div class="container">
+      <div class="row">
+        <div class="col m3">
+            <figure>
+              <img class="responsive-img" src="./images/servicios-home/meeting.svg" alt="">
+              <figcaption>
+                <p>Asesoría personalizada</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col m3">
+            <figure>
+                <img class="responsive-img" src="./images/servicios-home/life-insurance.svg" alt="">
+                <figcaption>
+                  <p>40 años de experiencia</p>
+                </figcaption>
+              </figure>
+          </div>
+          <div class="col m3">
+            <figure>
+                <img class="responsive-img" src="./images/servicios-home/place.svg" alt="">
+                <figcaption>
+                  <p>Excelente Conectividad</p>
+                </figcaption>
+              </figure>
+          </div>
+          <div class="col m3">
+            <figure>
+                <img class="responsive-img" src="./images/servicios-home/cctv (1).svg" alt="">
+                <figcaption>
+                  <p>Seguridad 24/7</p>
+                </figcaption>
+              </figure>
+          </div>
+      </div>
+    </div>
+  </div>
+  <section id="bodegas">
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col s6">
+            <div class="cont_bodega ">
+              <h2 class="titulo">Bodegas</h2>
+              <p><strong>500m² a 2.850m²</strong></p> 
+              <ul>
+                <li>Altura promedio útil 9mts. </li>
+                <li>Pilares y muros de hormigón armado, RF-180 y corta fuegos RF- 120. </li>
+                <li>Andenes con nivelador mecánico y accesos a piso. </li>
+                <li>Energía eléctrica trifásica. </li>
+                <li>Oficinas con kitchenette, sala de datos y cableado para internet y telefonía IP. </li>
+                <li>Red húmeda, con matriz de incendio de 4” y gabinetes de extinción rápida. </li>
+                <li>Iluminación led en interiores y exteriores. </li>
+                <li>Estacionamientos exclusivos por bodega. </li>
+                <li>Seguridad con guardias 24/7 en porterías, lectura de patentes, botón de pánico, casetas blindadas antialunizaje, CCTV y alarmas de intrusión. </li>
+              </ul>
+              <a href="">Ver más</a>
+            </div>
+          </div>
+          <div class="col s6 pdr">
+              <div class="carousel carousel-slider center">
+                  <div class="carousel-item" href="#one!">
+                    <img class="responsive-img" src="./images/bodegas-home/slide1.png" alt="">
+                  </div>
+                  <div class="carousel-item" href="#two!">
+                    <img class="responsive-img" src="./images/bodegas-home/slide1.png" alt="">
+                  </div>
+                  <div class="carousel-item" href="#one!">
+                    <img class="responsive-img" src="./images/bodegas-home/slide1.png" alt="">
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <div class="seccion_division">
+    <div class="container">
+        <p>Mas de 100.000 m2 en arriendo en las mejores ubicaciones dentro del radio urbano de Santiago con excelente conectividad.</p>
+    </div>
+  </div>
+  <section id="red_de_bodegas">
+    <div class="container">
+      
+    </div>
+  </section>
   <!-- build:js scripts/vendor.js -->
   <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="/node_modules/swiper/dist/js/swiper.min.js"></script>
@@ -31,6 +147,7 @@
   <script text="text/javascript" src="/node_modules/slim-select/dist/slimselect.min.js"></script>
   <!-- endbuild -->
   <!-- build:js scripts/main.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="scripts/main.js"></script>
   <!-- endbuild -->
 </body>
