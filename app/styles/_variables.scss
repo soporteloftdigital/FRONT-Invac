@@ -1,0 +1,36 @@
+// Main colors
+$white: #fff;
+$black: #000;
+$blue: #00508c;
+$darkBlue: #073d79;
+$lightBlue: #008ccc;
+$lightGray: #d3d3d3;
+$darkGray-opacity: rgba(96, 100, 105, .9);
+$bg-gray: #e3e7e8;
+$gray-text: #5f6469;
+
+// Main colors subsidy
+$red: #921c1e;
+$lightRed: #ac2121;
+
+// Background and text colors
+$textPrice: #5f6469;
+$overlayBlue: #0a71b8;
+
+// Mixins
+@mixin transition($time, $animation) {
+  transition: all ($time) ($animation);
+}
+
+@mixin background($position, $repeat, $size) {
+  background-position: $position;
+  background-repeat: $repeat;
+  background-size: $size;
+}
+
+@mixin center-flex($align, $justify, $direction) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
