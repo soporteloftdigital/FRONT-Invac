@@ -9,7 +9,7 @@
         font-size: 1.8rem;
         margin-bottom: 5%;
         font-weight: 300;
-        color: #024E7F;
+        color: #0B5F7C;
         strong
         {
             font-weight: 700;
@@ -132,6 +132,34 @@
         {
             font-size: 1.2rem;
             margin: 0;
+            
+        }
+        .swiper-container
+        {
+            h2, p
+            {
+                margin: 0;
+                color: #0B5F7C;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+            p
+            {
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            .swiper-slide
+            {
+                background-color: $blanco;
+            }
+            .swiper-slide 
+            {
+                opacity: 0!important;
+            }
+            .swiper-slide-active
+            {
+                opacity: 1!important;
+            }
         }
         .mapa
         {
