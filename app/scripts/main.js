@@ -26,6 +26,7 @@ $(document).ready(function(){
     position = $(this).attr('data-position');
     swiper_bodegas.slideTo(position);
   });
+  $('.modal').modal();
 });
 
 $(document).scroll(function(){

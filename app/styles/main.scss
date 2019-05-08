@@ -67,9 +67,12 @@ hr {
 @import 'variables';
 @import 'navbar';
 @import 'footer';
+@import 'home_in';
 @import 'home/home';
 @import 'home/servicios_home';
 @import 'home/bodegas';
 @import 'home/division';
 @import 'home/red_de_bodegas';
 @import 'home/nuestros_clientes';
+//quienes somos
+@import 'quienes_somos/quienes_somos';

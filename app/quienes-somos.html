@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arriendo de Bodegas | Invac</title>
+  <!-- Place favicon.ico in the root directory -->
+  <!-- build:css styles/vendor.css -->
+  <link rel="stylesheet" href="/node_modules/swiper/dist/css/swiper.min.css">
+  <link rel="stylesheet" href="/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/node_modules/tippy.js/themes/light.css">
+  <link rel="stylesheet" href="/node_modules/slim-select/dist/slimselect.min.css">
+  <link rel="stylesheet" href="./styles/materialize.min.css">
+  <!-- endbuild -->
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,500,700">
+  <!-- endbuild -->
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <header class="navbar-fixed">
+    <nav class="transparent z-depth-0">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">
+          <img src="./images/logo-invac.svg" alt="">
+        </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="quienes-somos.html">Quienes somos</a></li>
+          <li><a href="nuevas-bodegas.html">Nuevas bodegas</a></li>
+          <li><a href="red-de-bodegas.html">Red de bodegas</a></li>
+          <li><a class="modal-trigger" href="#contacto">Contacto</a></li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">Javascript</a></li>
+    <li><a href="mobile.html">Mobile</a></li>
+  </ul>  
+  <section id="home_in">
+    <div class="container">
+      <div class="row">
+          <h1>Quienes somos</h1>
+      </div>
+    </div>
+  </section>
+  <section id="quienes_somos" class="container">
+    <div class="bajada_home">
+      <p><strong>INVAC</strong> es una empresa de la familia Andrighetti vinculada al negocio de bodegaje y galpones por más de 40 años, preferentemente en las comunas de Macul y Quilicura. Próximamente con presencia en la comuna de Pudahuel.En la actualidad cuenta con más de 100.000 m² de bodegaje industrial en arriendo en diversos formatos. Y está en un proceso de crecimiento que la llevará en un corto plazo a 150.000 m².</p>
+    </div>
+  </section>
+  <section id="nuestros_clientes">
+    <div class="container">
+      <h2 class="titulo">Nuestro <strong>clientes</strong></h2>
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/clientes/trido.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/clientes/genexpress.png" alt="">
+          </div>
+          <div class="swiper-slide">
+              <img src="./images/clientes/prodiel.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/clientes/cycle.png" alt="">
+          </div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col s4">
+            <img class="responsive-img" src="./images/logo-footer.svg" alt="">
+        </div>
+        <div class="col s4">
+          <div class="center-align direccion">
+            <p class="white-text"><strong>Of. Centrales:</strong> </p>
+            <p class="white-text">Exequiel Fernández 3685, Macul</p>
+          </div>
+        </div>
+        <div class="col s4">
+          <ul class="center-align datos_contacto">
+            <li>
+              <a href="" class="white-text left-align"><img src="./images/mail-icon.svg" alt=""> info@invac.cl</a>
+            </li>
+            <li>
+              <a href="" class="white-text left-align"><img src="./images/phone-icon.svg" alt=""> +56 2 2752 4588</a>
+            </li>
+            <li>
+              <a href="" class="white-text left-align"><img src="./images/phone-icon.svg" alt=""> +56 2 2752 4595</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Modal Structure -->
+  <div id="contacto" class="modal">
+      <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+    </div>
+  <!-- build:js scripts/vendor.js -->
+  <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/node_modules/swiper/dist/js/swiper.min.js"></script>
+  <script type="text/javascript" src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script text="text/javascript" src="/node_modules/tippy.js/umd/index.min.js"></script>
+  <script text="text/javascript" src="/node_modules/slim-select/dist/slimselect.min.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/main.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

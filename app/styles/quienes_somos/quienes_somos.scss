@@ -1,0 +1,29 @@
+#quienes_somos
+{
+    padding: 5% 0;
+    .bajada_home
+    {
+        position: relative;
+        p
+        {
+            font-weight: 400;
+            color: #606060;
+            font-size: 1.1rem;
+            strong
+            {
+                font-weight: 700;
+            }
+        }
+        &:after
+        {
+            content: '';
+            position: absolute;
+            width: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 3px;
+            bottom: -40px;
+            background-color: #0B5F7C;
+        }
+    }
+}
