@@ -20,8 +20,20 @@ header.navbar-fixed.white
         a
         {
           color: $azul;
+          font-weight: 500;
+          font-size: 0.8rem;
         }
       }
+    }
+  }
+}
+nav
+{
+  ul
+  {
+    a
+    {
+      font-size: 0.9rem;
     }
   }
 }

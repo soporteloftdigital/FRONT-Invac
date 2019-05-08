@@ -16,6 +16,7 @@
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,500,700">
   <!-- endbuild -->
 </head>
 
@@ -139,15 +140,74 @@
       <h2 class="titulo">Nuestra <strong>red de bodegas</strong></h2>
       <div class="card-panel etapa">
         <div class="row">
-          <div class="col s8">
+          <div class="col s7">
             <h2>Etapa 1</h2>
             <p>Condominio Industrial El Cerro</p>
-            <div class="mapa">
-              <img class="responsive-img" src="./images/red-de-bodegas/Mapa.png" alt="">
+            <!-- Swiper -->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/red-de-bodegas/Mapa.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/bodegas-home/slide1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/red-de-bodegas/Mapa.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/bodegas-home/slide1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/red-de-bodegas/Mapa.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/bodegas-home/slide1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/red-de-bodegas/Mapa.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/bodegas-home/slide1.png" alt="">
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col s4">
-
+          <div class="col s5 pd0">
+              <ul class="collection">
+                <li class="collection-item activo" data-position="0">
+                  <p>Camino El Cerro 290, Quilicura Etapa I</p>
+                  <p class="no_disponible">No disponible</p>
+                </li>
+                <li class="collection-item" data-position="1">
+                  <p>Camino El Cerro 290, Quilicura Etapa II</p>
+                  <p class="disponible">Disponible</p>
+                </li>
+                <li class="collection-item" data-position="2">
+                    <p>Caupolicán 9260, Quilicura</p>
+                    <p class="no_disponible">No disponible</p>
+                </li>
+                <li class="collection-item" data-position="3">
+                    <p>Av. Marathon 3610 • 3654, Macul</p>
+                    <p class="disponible">Disponible</p>
+                </li>
+                <li class="collection-item" data-position="4">
+                    <p>Av. Castillo Urízar Sur 3611• 3655, Macul</p>
+                    <p class="disponible">Disponible</p>
+                </li>
+                <li class="collection-item" data-position="5">
+                    <p>Exequiel Fernández 3685, Macul</p>
+                    <p class="no_disponible">No disponible</p>
+                </li>
+                <li class="collection-item" data-position="6">
+                    <p>Av. Quilín 3550, Macul</p>
+                    <p class="disponible">Disponible</p>
+                </li>
+                <li class="collection-item" data-position="7">
+                    <p>Camino Antíguo a Valparaíso 12010 esq. Av. La Farfana – Pudahuel </p>
+                    <p class="proximamente">Próximamente</p>
+                </li>
+              </ul>
           </div>
         </div>
       </div>
@@ -179,6 +239,34 @@
       </div>
     </div>
   </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col s4">
+            <img class="responsive-img" src="./images/logo-footer.svg" alt="">
+        </div>
+        <div class="col s4">
+          <div class="center-align direccion">
+            <p class="white-text"><strong>Of. Centrales:</strong> </p>
+            <p class="white-text">Exequiel Fernández 3685, Macul</p>
+          </div>
+        </div>
+        <div class="col s4">
+          <ul class="center-align datos_contacto">
+            <li>
+              <a href="" class="white-text left-align"><img src="./images/mail-icon.svg" alt=""> info@invac.cl</a>
+            </li>
+            <li>
+              <a href="" class="white-text left-align"><img src="./images/phone-icon.svg" alt=""> +56 2 2752 4588</a>
+            </li>
+            <li>
+              <a href="" class="white-text left-align"><img src="./images/phone-icon.svg" alt=""> +56 2 2752 4595</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- build:js scripts/vendor.js -->
   <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="/node_modules/swiper/dist/js/swiper.min.js"></script>

@@ -1,14 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700,900');
-
 :root {
-  --Montserrat: 'Montserrat', sans-serif;
   box-sizing: border-box;
   line-height: 1.6;
   font-size: 16px;
 }
 
 * {
-  font-family: var(--Montserrat);
   box-sizing: inherit;
 }
 
@@ -24,6 +20,7 @@ html, body{
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 strong {
@@ -60,6 +57,10 @@ hr {
   @if $orientacion=="bottom"
   {
     padding-bottom: $number + px;
+  }
+  @if $orientacion=="none"
+  {
+    padding: 0px;
   }
 }
 // General

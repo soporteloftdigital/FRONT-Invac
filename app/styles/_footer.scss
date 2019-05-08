@@ -1,0 +1,22 @@
+footer
+{
+    background-color: #555555;
+    padding: 2% 0;
+    .row
+    {
+        margin: 0;
+        .direccion
+        {
+            p
+            {
+                margin: 0;
+                font-size: 0.7rem;
+            }
+        }
+        .datos_contacto
+        {
+            margin-top: 0;
+            font-size: 0.7rem;
+        }
+    }
+}

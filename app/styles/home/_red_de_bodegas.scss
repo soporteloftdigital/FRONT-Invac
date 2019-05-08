@@ -6,11 +6,128 @@
     {
         text-align: center;
         margin: 0;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-bottom: 5%;
+        font-weight: 300;
+        color: #024E7F;
+        strong
+        {
+            font-weight: 700;
+        }
+    }
+    .slider 
+    {
+        .slides 
+        {
+            background-color: $blanco;
+            li 
+            {
+                height: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    background-size: 80%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    position: relative;
+                }
+                a
+                {
+                    position: absolute;
+                    right: 10%;
+                    bottom: 0;
+                }
+            }
+        }
     }
     .etapa
     {
+        padding: 0;
+        .row
+        {
+            .col
+            {
+                padding: 24px;
+            }
+            .pd0
+            {
+                @include padding_xy(none,0);
+                border-left: 1px solid #5D6564;
+                .collection
+                {
+                    margin  : 0;
+                    padding: 0;
+                    border: 0px solid #000;
+                    
+                    .collection-item
+                    {
+                        border: 0px solid #000;
+                        position: relative;
+                        transition: 0.5s ease-in-out all;
+                        cursor: pointer;
+                        p
+                        {
+                            font-size: 0.9rem;
+                            margin: 0;
+                        }
+                        .disponible
+                        {
+                            background-color: $disponible;
+                        }
+                        .no_disponible
+                        {
+                            background-color: $no_disponible;
+                        }
+                        .proximamente
+                        {
+                            background-color: $proximamente;
+                        }
+                        .disponible, .no_disponible, .proximamente
+                        {
+                            display: table;
+                            color: $blanco;
+                            font-size: 0.8rem;
+                            padding: 2px 10px;
+                            margin-top: 10px;
+                            border-radius: 50px;
+                        }
+                        &:hover
+                        {
+                            background-color: #ECECEC;
+                        }
+                        &:after
+                        {
+                            content: '';
+                            width: 90%;
+                            height: 1px;
+                            background-color: #9B9B9B;
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                        &:last-child:after
+                        {
+                            content: '';
+                            width: 90%;
+                            height: 0px;
+                        }
+                    }
+                    .activo
+                    {
+                        background-color: $bodegas_activo;
+                        p
+                        {
+                            color: $blanco;
+                        }
+                        &:hover
+                        {
+                            background-color: $bodegas_activo;
+                        }
+                    }
+                }
+            }
+        }
         h2, p
         {
             font-size: 1.2rem;
@@ -23,5 +140,6 @@
                 margin-top: 50px;
             }
         }
+        
     }
 }
