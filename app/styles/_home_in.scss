@@ -2,18 +2,21 @@
 {
     width: 100%;
     height: 80%;
-    background-image: url(../images/header.png);
+    background-image: url(../images/header-in.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    h1
+    .bajada
     {
         position: absolute;
-        bottom: 1%;
+        bottom: 10%;
         left: 15%;
         color: $blanco;
-        font-size: 2.3rem;
-        font-weight: 600;
+        h1
+        {
+            font-size: 2.3rem;
+            font-weight: 600;
+        }
     }
 }

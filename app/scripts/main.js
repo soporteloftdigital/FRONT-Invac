@@ -1,9 +1,11 @@
 $(document).ready(function(){
   $('.sidenav').sidenav();
-  $('#bodegas .carousel.carousel-slider').carousel({
+  $('#bodegas .carousel.carousel-slider, #bodegas_oficinas .carousel.carousel-slider').carousel({
     fullWidth: true,
     indicators: true
   });
+  $('.tabs').tabs();
+  
   $('#red_de_bodegas .carousel').carousel({
     fullWidth: true,
     indicators: false,
@@ -20,7 +22,7 @@ $(document).ready(function(){
   //cambiar slider red bodegas según navegacion
 
   var position;
-  $('#red_de_bodegas .collection-item').on("click",function(){
+  $('#red_de_bodegas .collection-item').on('click',function(){
     $('.activo').removeClass('activo');
     $(this).addClass('activo');
     position = $(this).attr('data-position');

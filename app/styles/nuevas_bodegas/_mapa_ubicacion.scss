@@ -1,0 +1,25 @@
+.mapa_ubicacion
+{
+    padding: 8% 0;
+    position: relative;
+    a.enlace_ubicacion {
+        color: #0B5F7C;
+        border: 2px solid #0B5F7C;
+        background-color: $blanco;
+        padding: 4px 15px;
+        border-radius: 20px;
+        position: absolute;
+        padding-left: 30px;
+        left: 55%;
+        bottom: 10%;
+        cursor: pointer;
+        &:before
+        {
+            content: url(./../../images/icono-ubicacion.svg);
+            position: absolute;
+            left: 8px;
+            top: 8px;
+        }
+    }
+
+}

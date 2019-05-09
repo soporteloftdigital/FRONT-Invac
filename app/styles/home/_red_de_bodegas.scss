@@ -151,10 +151,32 @@
             .swiper-slide
             {
                 background-color: $blanco;
-            }
-            .swiper-slide 
-            {
                 opacity: 0!important;
+                position: relative;
+                img
+                {
+                    display: block;
+                    margin: 0 auto;
+                }
+                a.enlace_ubicacion {
+                    color: #0B5F7C;
+                    border: 2px solid #0B5F7C;
+                    background-color: $blanco;
+                    padding: 4px 15px;
+                    border-radius: 20px;
+                    position: absolute;
+                    padding-left: 30px;
+                    right: 5%;
+                    bottom: 1%;
+                    cursor: pointer;
+                    &:before
+                    {
+                        content: url(./../../images/icono-ubicacion.svg);
+                        position: absolute;
+                        left: 8px;
+                        top: 8px;
+                    }
+                }
             }
             .swiper-slide-active
             {
