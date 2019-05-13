@@ -1,0 +1,74 @@
+
+#contacto {
+    max-height: 90%;
+    top: 6%!important;
+    max-width: 500px;
+    border-radius: 10px;
+    .row
+    {
+        margin: 0;
+    }
+    h4
+    {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #0B5F7C;
+    }
+    p
+    {
+        font-size: 0.9rem;
+        margin: 5px 0;
+    }
+    input, textarea
+    {
+        border: 1px solid #9e9e9e;
+        padding-left: 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    input
+    {
+        height: 35px;
+        width: 100%;
+    }
+    textarea
+    {
+        height: 75px;
+        min-height: 75px;
+    }
+    label
+    {
+        top: -5px;
+        left: 1%;
+        font-size: 0.9rem;
+    }
+    label.active
+    {
+        transform: translateY(-15px) translateX(-5px) scale(0.8);
+        color: #0B5F7C;
+    }
+    .btn_enviar {
+        background-color: white;
+        border: 2px solid #0B5F7C!important;
+        display: table;
+        margin: 0 auto;
+        width: auto!important;
+        color: #0B5F7C;
+        font-weight: 500;
+        border-radius: 5px;
+        text-align: center;
+        padding-left: inherit;
+        padding: 0px 34px;
+        font-size: 0.9rem;
+    }
+    a.telefono
+    {
+        margin-top: 10px;
+        font-weight: 600;
+        color: #0B5F7C;
+        display: block;
+    }
+    p.pie {
+        font-size: 0.8rem;
+    }
+}

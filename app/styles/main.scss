@@ -41,6 +41,10 @@ hr {
 {
   background-color: #2056A6;
 }
+.bg_blanco
+{
+  background-color: #ffffff;
+}
 @mixin padding_xy($orientacion, $number) {
   @if $orientacion=="left"
   {
@@ -82,3 +86,7 @@ hr {
 @import 'nuevas_bodegas/mapa_ubicacion';
 //red de bodegas
 @import 'red_de_bodegas/red_de_bodegas';
+//contacto
+@import 'contacto';
+//responsive
+@import 'responsive';

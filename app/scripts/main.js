@@ -16,11 +16,21 @@ $(document).ready(function(){
   });
   var swiper = new Swiper('#nuestros_clientes .swiper-container', {
     slidesPerView: 4,
-    spaceBetween: 50
+    spaceBetween: 50,
+    autoplay: {
+      delay: 4000,
+    },
+    breakpoints: {
+      768:
+      {
+        slidesPerView: 2,
+        spaceBetween: 30
+      }
+    }
   });
 
   var swiper_bodegas = new Swiper('#red_de_bodegas .swiper-container', {
-    effect: 'fade'
+    effect: 'fade',
   });
 
   var red_bodega = new Swiper('#red_de_bodegas_in .swiper-container', {
@@ -43,12 +53,12 @@ $(document).ready(function(){
 
 $(document).scroll(function(){
   if($(this).scrollTop()>=10) {
-    $('.navbar-fixed').addClass('bg_azul');
+    $('.navbar-fixed').addClass('bg_blanco');
     //$('.navbar-fixed nav').removeClass('z-depth-0');
   }
   else
   {
-    $('.navbar-fixed').removeClass('bg_azul');
+    $('.navbar-fixed').removeClass('bg_blanco');
     
     //$('.navbar-fixed nav').addClass('z-depth-0');
   } 

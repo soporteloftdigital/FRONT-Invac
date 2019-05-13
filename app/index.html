@@ -30,25 +30,25 @@
   <header class="navbar-fixed">
     <nav class="transparent z-depth-0">
       <div class="nav-wrapper container">
-        <a href="#" class="brand-logo">
-          <img src="./images/logo-invac.svg" alt="">
+        <a href="#" class="brand-logo left">
+          <img class="logo_blanco" src="./images/logo.png" alt="">
+          <img class="logo_azul" src="./images/logo-azul.png" alt="">
         </a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="quienes-somos.html">Quienes somos</a></li>
           <li><a href="nuevas-bodegas.html">Nuevas bodegas</a></li>
           <li><a href="red-de-bodegas.html">Red de bodegas</a></li>
           <li><a class="modal-trigger" href="#contacto">Contacto</a></li>
-
         </ul>
       </div>
     </nav>
   </header>
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Sass</a></li>
-    <li><a href="badges.html">Components</a></li>
-    <li><a href="collapsible.html">Javascript</a></li>
-    <li><a href="mobile.html">Mobile</a></li>
+    <li><a href="quienes-somos.html">Quienes somos</a></li>
+    <li><a href="nuevas-bodegas.html">Nuevas bodegas</a></li>
+    <li><a href="red-de-bodegas.html">Red de bodegas</a></li>
+    <li><a class="modal-trigger" href="#contacto">Contacto</a></li>
   </ul>  
   <section id="home">
     <div class="container">
@@ -62,7 +62,7 @@
   <div class="items">
     <div class="container">
       <div class="row">
-        <div class="col m3">
+        <div class="col s6 m3">
             <figure>
               <img class="responsive-img" src="./images/servicios-home/meeting.svg" alt="">
               <figcaption>
@@ -70,7 +70,7 @@
               </figcaption>
             </figure>
           </div>
-          <div class="col m3">
+          <div class="col s6 m3">
             <figure>
                 <img class="responsive-img" src="./images/servicios-home/life-insurance.svg" alt="">
                 <figcaption>
@@ -78,7 +78,7 @@
                 </figcaption>
               </figure>
           </div>
-          <div class="col m3">
+          <div class="col s6 m3">
             <figure>
                 <img class="responsive-img" src="./images/servicios-home/place.svg" alt="">
                 <figcaption>
@@ -86,7 +86,7 @@
                 </figcaption>
               </figure>
           </div>
-          <div class="col m3">
+          <div class="col s6 m3">
             <figure>
                 <img class="responsive-img" src="./images/servicios-home/cctv (1).svg" alt="">
                 <figcaption>
@@ -100,7 +100,21 @@
   <section id="bodegas">
     <div class="container-fluid">
       <div class="row">
-          <div class="col s6">
+          <div class="col s12 m6 push-m6 pdr">
+              <div class="carousel carousel-slider center">
+                  <div class="carousel-item" href="#one!">
+                    <img class="responsive-img" src="./images/bodegas-home/slide1.png" alt="">
+                  </div>
+                  <div class="carousel-item" href="#two!">
+                    <img class="responsive-img" src="./images/bodegas-home/slide1.png" alt="">
+                  </div>
+                  <div class="carousel-item" href="#one!">
+                    <img class="responsive-img" src="./images/bodegas-home/slide1.png" alt="">
+                  </div>
+              </div>
+          </div>
+          
+          <div class="col s12 m6 pull-m6">
             <div class="cont_bodega ">
               <h2 class="titulo">Bodegas</h2>
               <p><strong>500m² a 2.850m²</strong></p> 
@@ -118,19 +132,6 @@
               <a class="ver_mas" href="">Ver más</a>
             </div>
           </div>
-          <div class="col s6 pdr">
-              <div class="carousel carousel-slider center">
-                  <div class="carousel-item" href="#one!">
-                    <img class="responsive-img" src="./images/bodegas-home/slide1.png" alt="">
-                  </div>
-                  <div class="carousel-item" href="#two!">
-                    <img class="responsive-img" src="./images/bodegas-home/slide1.png" alt="">
-                  </div>
-                  <div class="carousel-item" href="#one!">
-                    <img class="responsive-img" src="./images/bodegas-home/slide1.png" alt="">
-                  </div>
-              </div>
-          </div>
       </div>
     </div>
   </section>
@@ -144,8 +145,43 @@
       <h2 class="titulo">Nuestra <strong>red de bodegas</strong></h2>
       <div class="card-panel etapa">
         <div class="row">
-          <div class="col s7">
-            
+            <div class="col s12 m5 push-m7 pd0">
+                <ul class="collection">
+                  <li class="collection-item activo" data-position="0">
+                    <p>Camino El Cerro 290, Quilicura Etapa I</p>
+                    <p class="no_disponible">No disponible</p>
+                  </li>
+                  <li class="collection-item" data-position="1">
+                    <p>Camino El Cerro 290, Quilicura Etapa II</p>
+                    <p class="disponible">Disponible</p>
+                  </li>
+                  <li class="collection-item" data-position="2">
+                      <p>Caupolicán 9260, Quilicura</p>
+                      <p class="no_disponible">No disponible</p>
+                  </li>
+                  <li class="collection-item" data-position="3">
+                      <p>Av. Marathon 3610 • 3654, Macul</p>
+                      <p class="disponible">Disponible</p>
+                  </li>
+                  <li class="collection-item" data-position="4">
+                      <p>Av. Castillo Urízar Sur 3611• 3655, Macul</p>
+                      <p class="disponible">Disponible</p>
+                  </li>
+                  <li class="collection-item" data-position="5">
+                      <p>Exequiel Fernández 3685, Macul</p>
+                      <p class="no_disponible">No disponible</p>
+                  </li>
+                  <li class="collection-item" data-position="6">
+                      <p>Av. Quilín 3550, Macul</p>
+                      <p class="disponible">Disponible</p>
+                  </li>
+                  <li class="collection-item" data-position="7">
+                      <p>Camino Antíguo a Valparaíso 12010 esq. Av. La Farfana – Pudahuel </p>
+                      <p class="proximamente">Próximamente</p>
+                  </li>
+                </ul>
+            </div>
+          <div class="col s12 m7 pull-m5">
             <!-- Swiper -->
             <div class="swiper-container">
               <div class="swiper-wrapper">
@@ -200,42 +236,6 @@
               </div>
             </div>
           </div>
-          <div class="col s5 pd0">
-              <ul class="collection">
-                <li class="collection-item activo" data-position="0">
-                  <p>Camino El Cerro 290, Quilicura Etapa I</p>
-                  <p class="no_disponible">No disponible</p>
-                </li>
-                <li class="collection-item" data-position="1">
-                  <p>Camino El Cerro 290, Quilicura Etapa II</p>
-                  <p class="disponible">Disponible</p>
-                </li>
-                <li class="collection-item" data-position="2">
-                    <p>Caupolicán 9260, Quilicura</p>
-                    <p class="no_disponible">No disponible</p>
-                </li>
-                <li class="collection-item" data-position="3">
-                    <p>Av. Marathon 3610 • 3654, Macul</p>
-                    <p class="disponible">Disponible</p>
-                </li>
-                <li class="collection-item" data-position="4">
-                    <p>Av. Castillo Urízar Sur 3611• 3655, Macul</p>
-                    <p class="disponible">Disponible</p>
-                </li>
-                <li class="collection-item" data-position="5">
-                    <p>Exequiel Fernández 3685, Macul</p>
-                    <p class="no_disponible">No disponible</p>
-                </li>
-                <li class="collection-item" data-position="6">
-                    <p>Av. Quilín 3550, Macul</p>
-                    <p class="disponible">Disponible</p>
-                </li>
-                <li class="collection-item" data-position="7">
-                    <p>Camino Antíguo a Valparaíso 12010 esq. Av. La Farfana – Pudahuel </p>
-                    <p class="proximamente">Próximamente</p>
-                </li>
-              </ul>
-          </div>
         </div>
       </div>
     </div>
@@ -266,19 +266,49 @@
       </div>
     </div>
   </section>
+  
+  <!-- Modal Structure -->
+  <div id="contacto" class="modal">
+      <div class="modal-content center-align container-fluid">
+        <h4>Contáctenos</h4>
+        <p>Gracias por dejarnos sus datos, dentro de 24 horas nuestros ejecutivos se contactarán con usted**</p>
+        <div class="row">
+            <div class="input-field">
+              <input id="nombre" type="text" class="validate">
+              <label class="active" for="nombre">Nombre *</label>
+            </div>
+            <div class="input-field">
+              <input id="correo" type="email" class="validate">
+              <label class="active" for="correo">E-mail *</label>
+            </div>
+            <div class="input-field">
+              <input id="telefono" type="text" class="validate">
+              <label class="active" for="telefono">Teléfono *</label>
+            </div>
+            <div class="input-field">
+              <textarea id="mensaje" class="materialize-textarea"></textarea>
+              <label for="mensaje">Consultas</label>
+            </div>
+            <input type="submit" class="btn_enviar" value="COTIZAR AQUÍ">
+          </div>
+        <a href="tel:+56227524588" class="telefono">+56 2 2752 4588</a>
+        
+        <p class="pie">*Campo requerido <br>** De Lunes a Viernes de 9:00 a 18:00 hrs.</p>
+      </div>
+    </div>
   <footer>
     <div class="container">
       <div class="row">
         <div class="col s4">
             <img class="responsive-img" src="./images/logo-footer.svg" alt="">
         </div>
-        <div class="col s4">
+        <div class="col s3">
           <div class="center-align direccion">
             <p class="white-text"><strong>Of. Centrales:</strong> </p>
             <p class="white-text">Exequiel Fernández 3685, Macul</p>
           </div>
         </div>
-        <div class="col s4">
+        <div class="col s5">
           <ul class="center-align datos_contacto">
             <li>
               <a href="" class="white-text left-align"><img src="./images/mail-icon.svg" alt=""> info@invac.cl</a>

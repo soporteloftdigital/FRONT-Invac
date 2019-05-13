@@ -1,0 +1,198 @@
+@media screen and (max-width: 767px)
+{
+    #home
+    {
+        min-height: 400px;
+        max-height: 400px;
+        .bajada_home 
+        {
+            h1
+            {
+                font-size: 1.2rem;
+            }
+            h2
+            {
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 1.8rem;
+            }
+        }
+    } 
+    #home_in
+    {
+        min-height: 350px;
+        max-height: 350px;
+        .bajada
+        {
+            left: 10%;
+            h1
+            {
+                font-size: 1.5rem;
+            }
+            p
+            {
+                margin: 0;
+            }
+        }
+    } 
+    
+    .items .row figure {
+        margin: 1em 20px;
+        padding: 6px;
+    }
+    #bodegas 
+    {
+        .cont_bodega {
+            width: 90%;
+            padding: 5%;
+            max-height: inherit;
+        }
+    }
+    #red_de_bodegas
+    {
+        .container
+        {
+            width: 100%;
+            .titulo
+            {
+                width: 90%;    
+            }
+            .etapa 
+            {
+                .swiper-container 
+                {
+                    .swiper-slide
+                    {
+                        img
+                        {
+                            width: 90%;
+                        }
+                        .enlace_ubicacion {
+                            padding: 4px 7px;
+                            right: 2%;
+                            padding-left: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //Pagina quienes somos
+    #quienes_somos 
+    {
+        .bajada_home {
+            text-align: center;
+            padding: 30px;
+            p{
+                font-size: 0.9rem;
+            }
+            &:after
+            {
+                bottom: 15px;
+            }
+        }
+    }
+    #caracteristicas 
+    {
+        .content_caracteristicas 
+        {
+            .titulo {
+                font-size: 1.2rem;
+                text-align: center;
+                width: 80%;
+                margin: 5% auto;
+                margin-bottom: 10%;
+            }
+            .caracteristica
+            {
+                background-color: $blanco;
+                border-bottom: 3px solid #0B5F7C;
+                .imagen_caracteristica
+                {
+                    display: none;
+                }
+                .detalle 
+                {
+                    ul 
+                    {
+                        li {
+                            list-style-type: disc;
+                            font-weight: 400;
+                            width: 95%;
+                            margin-left: 5%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #bodegas_oficinas
+    {
+        #bodegas, #oficinas
+        {
+            .cont_bodega
+            {
+                width: 100%;
+                padding: 10%;
+                ul
+                {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    #red_de_bodegas_in
+    {
+        .tabs
+        {
+            display: block;
+            .tab
+            {
+                width: 50%;
+            }
+        }
+        .p_xy 
+        {
+            .swiper-slide 
+            {
+                img
+                {
+                    width: 90%;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            
+        }
+        .contenido_tab 
+        {
+            ul
+            {
+                width: 85%;
+                margin-left: 10%;
+            }
+        }
+    }
+    
+    footer
+    {
+        width: 100%;
+        float: left;
+        .container
+        {
+            .row
+            {
+                display: flex;
+                align-items: center; 
+                .direccion
+                {
+                    p
+                    {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
