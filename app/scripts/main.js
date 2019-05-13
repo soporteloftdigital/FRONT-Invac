@@ -5,7 +5,10 @@ $(document).ready(function(){
     indicators: true
   });
   $('.tabs').tabs();
-  
+  $('#red_de_bodegas_in  .carousel').carousel({
+    fullWidth: true,
+    indicators: true
+  });
   $('#red_de_bodegas .carousel').carousel({
     fullWidth: true,
     indicators: false,
@@ -18,6 +21,13 @@ $(document).ready(function(){
 
   var swiper_bodegas = new Swiper('#red_de_bodegas .swiper-container', {
     effect: 'fade'
+  });
+
+  var red_bodega = new Swiper('#red_de_bodegas_in .swiper-container', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
   //cambiar slider red bodegas según navegacion
 
